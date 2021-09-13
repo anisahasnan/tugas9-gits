@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30dp">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Silahkan Isi Data Diri Anda"
+        android:textAppearance="@style/titleStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/namaLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/namaPanggilan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Panggilan" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/usia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Usia" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="274dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Jenis Kelamin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="278dp"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio_pirates"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginRight="10dp"
+            android:text="Wanita" />
+
+        <RadioButton
+            android:id="@+id/radio_ninjas"
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:text="Pria" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/domisili"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Domisili" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="279dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:text="Hobi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="48dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/checkbox_masak"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Memasak" />
+
+        <CheckBox
+            android:id="@+id/checkbox_fotografi"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Fotografi" />
+
+        <CheckBox
+            android:id="@+id/checkbox_olahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Olahraga" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="93dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="100dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/checkbox_musik"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Musik" />
+
+        <CheckBox
+            android:id="@+id/checkbox_otomotif"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Otomotif" />
+
+        <CheckBox
+            android:id="@+id/checkbox_melukis"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Melukis" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainColor"
+        android:text="Daftar"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.237"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

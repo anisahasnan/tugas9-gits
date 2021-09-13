@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:layout_margin="30dp">
+
+    <ImageView
+        android:id="@+id/logoHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logoHome"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/mainColor"
+        android:text="Selamat Datang di Ti(n)dur!" />
+
+    <TextView
+        android:id="@+id/subtitleHome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/homeTitle"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Apa itu Ti(n)dur?" />
+
+    <TextView
+        android:id="@+id/answer_subtitleHome1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/subtitleHome1"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:text="@string/answer_subtitleHome1" />
+
+    <TextView
+        android:id="@+id/subtitleHome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/answer_subtitleHome1"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Ingin tahu lebih lanjut soal Ti(n)dur?" />
+
+    <TextView
+        android:id="@+id/answer_subtitleHome2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/subtitleHome2"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:text="Kunjungi website Tindur melalui tombol di bawah" />
+
+    <Button
+        android:id="@+id/btnVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainColor"
+        android:layout_below="@+id/answer_subtitleHome2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Visit"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/subtitleHome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnVisit"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Bagikan Ti(n)dur dengan teman mu!" />
+
+    <TextView
+        android:id="@+id/answer_subtitleHome3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/subtitleHome3"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:text="Klik tombol di bawah untuk membagikan Ti(n)dur" />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainColor"
+        android:layout_below="@+id/answer_subtitleHome3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Share"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

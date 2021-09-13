@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="10dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:padding="7dp">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/foto" />
+
+            <TextView
+                android:id="@+id/labelNama"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Nama Lengkap:"
+                android:paddingBottom="3dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/foto"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/nama"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@+id/foto"
+                android:layout_below="@+id/labelNama"
+                android:hint="Facebook"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:id="@+id/labelJumlah"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Usia:"
+                android:paddingBottom="3dp"
+                android:layout_toRightOf="@+id/foto"
+                android:layout_below="@+id/nama"
+                android:textStyle="bold"
+                android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/jumlah"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/labelJumlah"
+                android:layout_toRightOf="@+id/foto"
+                android:hint="10" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
